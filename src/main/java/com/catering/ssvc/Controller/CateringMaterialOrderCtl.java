@@ -3,6 +3,7 @@ package com.catering.ssvc.Controller;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,5 +26,11 @@ public class CateringMaterialOrderCtl {
 //		}
 		String customerName = orderObject.getCustomerName();
 		return "success";
+	}
+	
+	@GetMapping("/testJenkins")
+	public String getForJenkins()
+	{
+		return "Your API is working for Jenkins";
 	}
 }
