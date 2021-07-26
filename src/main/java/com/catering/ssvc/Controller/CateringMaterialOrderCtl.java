@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(value="*")
-@RequestMapping(value="materialOrder")
+@RequestMapping(value="/materialOrder")
 public class CateringMaterialOrderCtl {
 
 //	@PostMapping("addMaterialOrder")
